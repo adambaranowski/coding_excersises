@@ -45,22 +45,22 @@ public class Solution {
 
         return 0;*/
 
-        int sum = ((A.length+1)*((A.length+1)+1))/2;
+        int sum = ((A.length + 1) * ((A.length + 1) + 1)) / 2;
         //S=n*(a0 + an)/2 = n*(n+1)/2
 
         int real_sum = 0;
-        for(int i = 0; i < A.length; i++){
+        for (int i = 0; i < A.length; i++) {
             real_sum += A[i];
         }
 
-        return sum-real_sum;
+        return sum - real_sum;
 
 
     }
 
     public static void main(String[] args) {
 
-        Integer[] A= {1,2,3,4,5,6,7,9};
+        Integer[] A = {1, 2, 3, 4, 5, 6, 7, 9};
         System.out.print(solution(A));
     }
 }
