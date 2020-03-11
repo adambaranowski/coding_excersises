@@ -17,7 +17,7 @@ public class Solution {
         }
 
         Set<Integer> set = new HashSet<         >();
-        set.
+
         return min;
     }
 
