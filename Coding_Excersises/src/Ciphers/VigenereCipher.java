@@ -138,8 +138,8 @@ public class VigenereCipher {
 
 
     public static void main(String[] args) {
-        String d = code("niesamowicie tajna wiadomosc", "klucz");
-        String c = decode(d, "klucz" );
+        String d = code("bardzo niesamowicie tajna wiadomosc", "kluczyk");
+        String c = decode(d, "kluczyk" );
         System.out.println(d);
         System.out.println(c);
     }
