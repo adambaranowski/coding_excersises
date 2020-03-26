@@ -14,12 +14,12 @@ public class HumanService {
     }
 
     private void addHuman(Human human){
-       // try{
+        try{
             HumanValidator.IsNameCorrect(human);
             humans.add(human);
-        //}catch (HumanNameWrongFormatException e){
-          //  e.printStackTrace();
-        //}
+        }catch (HumanNameWrongFormatException e){
+            e.printStackTrace();
+        }
     }
 
     private Human getHumanByLastName(String lastName) throws HumanNotFoundException {
