@@ -1,5 +1,7 @@
 package javaApiLearning.GenericTypeStack;
 
+import java.lang.reflect.Array;
+
 public class Stack<T> {
 
     private T[] array;
@@ -19,6 +21,7 @@ public class Stack<T> {
         }else{
 
             T[] newArray = (T[]) new Object[arrayLength*2];
+
 
             for (int i = 0; i < arrayLength; i++) {
                 newArray[i] = array[i];
